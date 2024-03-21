@@ -70,8 +70,8 @@ public class GuessNumberGame {
             }
 
             if (number == numberToGuess) {
-                System.out.println("TAK! Zgadłeś liczbę " + numberToGuess + " po " + liczba_prob + " próbach.");
-                return;
+                System.out.println(UsefulConstants.YES);
+                System.out.println(UsefulConstants.CONGRATULATIONS + ", " +liczba_prob+ " - tyle prób zajęło Ci odgadnięcie liczby "+numberToGuess);                return;
             } else if (number > numberToGuess) {
                 System.out.println("ZBYT WIELE");
             } else {
