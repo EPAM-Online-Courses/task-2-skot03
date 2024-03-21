@@ -34,7 +34,7 @@ public class GuessNumberGame {
         this.numberToGuess = (int) (Math.random() * upperBound) + 1;
     }
 
-    private void printProgressBar(int x, int y) {
+    private void tablica_progressu(int x, int y) {
         System.out.print("Postęp: [");
 
         for (int i = 0; i < x; i++) {
@@ -57,7 +57,7 @@ public class GuessNumberGame {
         int number;
 
         while (liczba_prob <= maxAttempts) {
-            printProgressBar(liczba_prob, maxAttempts - liczba_prob);
+            tablica_progressu(liczba_prob, maxAttempts - liczba_prob);
             System.out.println("PODAJ");
             String stringValue = scanner.nextLine();
 
